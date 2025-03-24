@@ -12,7 +12,7 @@
     
     <form method="POST" action="{{ route('posts.store') }}">
         @csrf
-        
+        <div class="form-wrapper">
         <div class="form-group">
             <label for="title">Заголовок</label>
             <input type="text" id="title" name="title" required>
@@ -24,6 +24,7 @@
         </div>
         
         <button type="submit" class="btn btn-primary">Создать заявку</button>
+       </div>
     </form>
 </div>
 
